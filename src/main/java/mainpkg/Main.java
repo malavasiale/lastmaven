@@ -3,24 +3,25 @@ package mainpkg;
 public class Main {
 	
 	String s;
+	NotImplemented notYet;
 	
-	public Main(String a) {
+	public Main(String a,NotImplemented notYet) {
 		this.s = a;
+		this.notYet = notYet;
 	}
 	
-	public Main() {
-		
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("test");
+	public Main(NotImplemented notYet) {
+		this.notYet = notYet;
 	}
 	
 	public boolean firstTest() {
 		if(s.length() < 5)
 			return true;
 		return false;
+	}
+	
+	public int toMock(String s) {
+		return notYet.notImplementedMethod(s);
 	}
 
 }
