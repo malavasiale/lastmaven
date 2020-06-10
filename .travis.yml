@@ -3,8 +3,7 @@ sudo: false
 addons:
   sonarcloud:
     organization: "malavasiale"
-    token:
-      secure: "9af3b1003f9b8a32ed92c39d472df7829d71ef15" # encrypted value of your token
+    token: "9af3b1003f9b8a32ed92c39d472df7829d71ef15"
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
